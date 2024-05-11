@@ -85,6 +85,9 @@
       font-size: 26px;
       font-weight: bold;
     }
+    &-title--light {
+      color: $light;
+    }
     &-subtitle {
       color: $accent;
       font-size: 16px;

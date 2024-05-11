@@ -7,7 +7,7 @@
                         <svg-icon name="logo" class="logo__icon"/>
                         <div class="logo__content">
                             <span class="logo__content-title">ОПТИМАЛХИМ</span>
-                            <span class="logo__content-subtitle">ХИМИЧЕСКИЕ ДОБАВКИ ДЛЯ БЕТОНОВ И РАСТВОРОВ</span>
+                            <span class="logo__content-subtitle">ДОБАВКИ ДЛЯ БЕТОНОВ И СТРОИТЕЛЬНЫХ РАСТВОРОВ</span>
                         </div>
                     </div>
                 </NuxtLink>

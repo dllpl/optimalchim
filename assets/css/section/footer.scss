@@ -1,0 +1,36 @@
+@import "../variables";
+@import "../mixin";
+
+.footer {
+  background-color: $dark;
+  color: $light;
+  padding: $br-l 0;
+
+
+  &__title {
+    color: $light;
+  }
+
+  &__company {
+    color: $secondary;
+    font-size: 14px;
+  }
+
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  &__right {
+
+  }
+
+}
