@@ -1,0 +1,112 @@
+@import "../variables";
+@import "../mixin";
+
+.icon {
+  display: block;
+
+  &--nav-phone {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--hero-phone {
+    width: 18px;
+    height: 18px;
+  }
+
+  &--calendar {
+    width: 35px;
+    height: 35px;
+  }
+
+  &--done {
+    width: 20px;
+    height: 20px;
+  }
+
+  &--advantage {
+    width: 60px;
+    height: 60px;
+  }
+
+  &--arrow {
+    width: 25px;
+    height: 25px;
+
+    &-right {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--arrow-small {
+    width: 18px;
+    height: 18px;
+  }
+
+  &--social {
+    width: 25px;
+    height: 25px;
+    fill: $light-gray;
+
+    &-star {
+      width: 55px;
+      height: 55px;
+    }
+
+    &-circle {
+      width: 60px;
+      height: 60px;
+    }
+
+    &-triangle {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  &__icon {
+    max-height: 55px;
+    max-width: 50px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'montserrat', sans-serif;
+    &-title {
+      color: $dark;
+      font-size: 26px;
+      font-weight: bold;
+    }
+    &-subtitle {
+      color: $accent;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+.circle {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  transition: all 0.5s ease-out;
+
+  &--accent {
+    background-color: $accent;
+  }
+
+  &--primary {
+    background-color: $primary;
+  }
+}

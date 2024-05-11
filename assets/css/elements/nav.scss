@@ -1,0 +1,23 @@
+@import "../variables";
+@import "../mixin";
+
+.nav {
+  padding-top: 15px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__item {}
+
+  &__link {
+    font-size: 16px;
+    color: $dark;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}

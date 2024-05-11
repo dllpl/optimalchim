@@ -1,0 +1,71 @@
+@import "../variables";
+@import "../mixin";
+
+.link {
+  font-size: 18px;
+  color: $dark;
+
+  &--flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &--icon-block {
+    border-radius: $br-m;
+    padding: 8px 25px 8px 10px;
+  }
+
+  &--icon-transition {
+    &:hover {
+      .circle {
+        width: 75px;
+      }
+    }
+  }
+
+  &--700 {
+    font-weight: 700;
+  }
+
+  &--dark {
+    color: $light-gray;
+    background-color: $dark ;
+  }
+  &--accent {
+    color: $accent;
+  }
+
+  &--underline {
+    text-decoration: underline;
+  }
+
+}
+
+
+.btn {
+  font-size: 18px;
+
+  &--flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &--icon-block {
+    border-radius: $br-m;
+    padding: 8px 15px 8px 10px;
+  }
+
+  &--light {
+    color: $dark;
+    background-color: $light-gray;
+  }
+
+  &--form {
+    background-color: $primary;
+    color: $light;
+    padding: 15px 20px;
+    border-radius: $br-m;
+  }
+}

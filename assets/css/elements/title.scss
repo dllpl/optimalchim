@@ -1,0 +1,36 @@
+@import "../variables";
+@import "../mixin";
+
+.title {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 400;
+  color: $dark;
+  padding: 0;
+  margin: 0;
+
+  &--section {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+  }
+
+  &--hero {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+
+  &--light {
+    color: $light;
+  }
+
+  &--700 {
+    font-weight: 700;
+  }
+
+  &--card {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+}
