@@ -26,19 +26,19 @@
                 <nav class="header__nav nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <NuxtLink to="/" class="nav__link">Главная</NuxtLink>
+                            <NuxtLink to="#hero" class="nav__link">Главная</NuxtLink>
                         </li>
                         <li class="nav__item">
-                            <NuxtLink href="#" class="nav__link">О компании</NuxtLink>
+                            <NuxtLink href="#about" class="nav__link">О компании</NuxtLink>
                         </li>
                         <li class="nav__item">
-                            <NuxtLink href="#" class="nav__link">Продукция</NuxtLink>
+                            <NuxtLink href="#products" class="nav__link">Продукция</NuxtLink>
                         </li>
                         <li class="nav__item">
-                            <NuxtLink href="#" class="nav__link">Преимущества</NuxtLink>
+                            <NuxtLink href="#advantages" class="nav__link">Преимущества</NuxtLink>
                         </li>
                         <li class="nav__item">
-                            <NuxtLink href="#" class="nav__link">Поддержка</NuxtLink>
+                            <NuxtLink href="#application" class="nav__link">Применение</NuxtLink>
                         </li>
                         <li class="nav__item">
                             <NuxtLink href="#" class="nav__link">География поставок</NuxtLink>

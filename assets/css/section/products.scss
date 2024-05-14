@@ -15,27 +15,10 @@
     flex-direction: column;
     gap: 32px;
   }
-
-  &__content {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-
-    &-text {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      gap: 25px;
-    }
-  }
-
-
   &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
   }
   &__item {
     display: flex;
@@ -44,8 +27,6 @@
     align-items: center;
     gap: 50px;
 
-    width: 420px;
-    min-height: 387px;
     padding: 24px 32px;
     background-color: $light-gray;
 
@@ -55,8 +36,13 @@
     }
 
     &-title {
-      font-size: 20px;
-      color: $dark;
+      color: $accent;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    &-subtitle {
+      font-size: inherit;
+      font-weight: normal;
     }
 
     &-text {

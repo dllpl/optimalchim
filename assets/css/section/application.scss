@@ -1,0 +1,12 @@
+@import "../variables";
+@import "../mixin";
+
+.application {
+    margin-bottom: 75px;
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 15px
+    }
+}
