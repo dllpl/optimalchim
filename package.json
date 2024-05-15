@@ -14,8 +14,8 @@
     "@vee-validate/nuxt": "^4.12.7",
     "@vee-validate/rules": "^4.12.7",
     "maska": "^2.1.11",
-    "nuxt-build-cache": "^0.1.1",
     "nuxt": "^3.11.2",
+    "nuxt-build-cache": "^0.1.1",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
