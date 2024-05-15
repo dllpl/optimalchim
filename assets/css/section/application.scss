@@ -2,7 +2,7 @@
 @import "../mixin";
 
 .application {
-    margin-bottom: 75px;
+    margin-bottom: $section-margin;
 
     &__top {
         display: flex;

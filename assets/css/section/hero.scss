@@ -2,17 +2,20 @@
 @import "../mixin";
 
 .hero {
-  padding: 75px 0;
-  //&__content {
-  //  max-width: 600px;
-  //}
+  margin-top: $section-margin;
+  margin-bottom: $section-margin;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $into-section-gape;
+  }
 
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    margin-bottom: 50px;
   }
 
   &__subtitle {

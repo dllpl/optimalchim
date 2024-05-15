@@ -49,8 +49,9 @@ export default defineNuxtConfig({
         '@nuxtjs/svg-sprite',
         '@nuxtjs/device',
         'nuxt-swiper',
+        "nuxt-build-cache",
         '@vee-validate/nuxt',
-        "nuxt-build-cache"
+        '@formkit/auto-animate/nuxt'
     ],
     googleFonts: {
         families: {

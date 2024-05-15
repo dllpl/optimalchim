@@ -2,18 +2,29 @@
 @import "../mixin";
 
 .products {
-  margin-bottom: 75px;
+  margin-bottom: $section-margin;
 
   &__top {
     display: flex;
-    flex-direction: column;
-    gap: 15px
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn {
+    border: 2px solid $accent;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 15px;
   }
 
   &__container{
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: $into-section-gape;
   }
   &__list {
     //display: grid;
@@ -40,8 +51,12 @@
       color: $accent;
       font-size: 24px;
       font-weight: 700;
+      border-bottom: 1px solid $accent;
+      padding-bottom: 12px;
     }
+
     &-subtitle {
+      margin: 0;
       font-size: inherit;
       font-weight: normal;
     }
@@ -50,6 +65,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      text-align: center;
       gap: 12px;
     }
 

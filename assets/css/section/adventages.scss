@@ -1,12 +1,62 @@
 @import "../variables";
 @import "../mixin";
 
-.adventages {
-    margin-bottom: 75px;
+.advantages {
+    margin-bottom: $section-margin;
+    background-color: #002F54;
+    color: $light;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: $into-section-gape;
+        padding-top: $into-section-gape;
+        padding-bottom: $into-section-gape;
+    }
 
     &__top {
         display: flex;
         flex-direction: column;
-        gap: 15px
+        gap: $into-section-gape - 20px
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: $into-section-gape;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        gap: $into-section-gape;
+        border-bottom: 1px solid $accent;
+        padding-bottom: $into-section-gape;
+        min-height: 225px;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 50%;
+        }
+
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: $br-s;
+            background: $light;
+            width: 50%;
+        }
+
+        &-list {
+            list-style-type: disc;
+            margin-left: $br-s;
+        }
     }
 }

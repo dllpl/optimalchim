@@ -2,12 +2,12 @@
 @import "../mixin";
 
 .about {
-  margin-bottom: 75px;
+  margin-bottom: $section-margin;
 
   &__container{
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: $into-section-gape;
   }
 
   &__content {

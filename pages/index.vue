@@ -6,6 +6,7 @@
         <SectionAdvantages/>
         <SectionApplication/>
     </main>
+    <ElementsGoToTop/>
 </template>
 <script setup lang="ts">
 </script>

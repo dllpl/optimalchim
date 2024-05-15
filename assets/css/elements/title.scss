@@ -2,35 +2,44 @@
 @import "../mixin";
 
 .title {
-  font-family: 'montserrat', sans-serif;
-  font-weight: 400;
-  color: $dark;
-  padding: 0;
-  margin: 0;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    color: $dark;
+    padding: 0;
+    margin: 0;
 
-  &--section {
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 52px;
-  }
+    &--section {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 52px;
+    }
 
-  &--hero {
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1.1;
-  }
+    &--advantages {
+        color: $light;
+    }
 
-  &--light {
-    color: $light;
-  }
+    &--hero {
+      font-size: 43px;
+      font-weight: bold;
+      line-height: 1.1;
+    }
 
-  &--700 {
-    font-weight: 700;
-  }
+    &--advantages--item {
+        font-size: 26px;
+        margin-top: 0;
+    }
 
-  &--card {
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 29px;
-  }
+    &--light {
+        color: $light;
+    }
+
+    &--700 {
+        font-weight: 700;
+    }
+
+    &--card {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 29px;
+    }
 }

@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "@vee-validate/i18n": "^4.12.7",
     "@vee-validate/nuxt": "^4.12.7",
     "@vee-validate/rules": "^4.12.7",
