@@ -2,73 +2,76 @@
 @import "../mixin";
 
 .products {
-  margin-bottom: $section-margin;
+    margin-bottom: $section-margin;
 
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__btn {
-    border: 2px solid $accent;
-    padding: 10px;
-    border-radius: 50%;
-  }
-
-  &__nav {
-    display: flex;
-    gap: 15px;
-  }
-
-  &__container{
-    display: flex;
-    flex-direction: column;
-    gap: $into-section-gape;
-  }
-  &__list {
-    //display: grid;
-    //grid-template-columns: repeat(4, 1fr);
-    //gap: 30px;
-  }
-  &__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    height: 100%;
-
-    padding: 24px 32px;
-    background-color: $light-gray;
-
-    &-img {
-      max-width: 136px;
-      max-height: 229px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    &-title {
-      color: $accent;
-      font-size: 24px;
-      font-weight: 700;
-      border-bottom: 1px solid $accent;
-      padding-bottom: 12px;
+    &__btn {
+        border: 2px solid $accent;
+        padding: 10px;
+        border-radius: 50%;
     }
 
-    &-subtitle {
-      margin: 0;
-      font-size: inherit;
-      font-weight: normal;
+    &__nav {
+        display: flex;
+        gap: 15px;
     }
 
-    &-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center;
-      gap: 12px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: $into-section-gape;
     }
 
-  }
+    &__list {
+        //display: grid;
+        //grid-template-columns: repeat(4, 1fr);
+        //gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        height: 100%;
+
+        padding: 24px 32px;
+        background-color: $light-gray;
+
+        &-img {
+            max-width: 136px;
+            max-height: 229px;
+        }
+
+        &-title {
+            color: $accent;
+            font-size: 24px;
+            font-weight: 700;
+            border-bottom: 1px solid $accent;
+            padding-bottom: 12px;
+        }
+
+        &-subtitle {
+            margin: 0;
+            font-size: inherit;
+            font-weight: normal;
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            text-align: center;
+            gap: 10px;
+            height: 110px;
+        }
+
+    }
 
 }

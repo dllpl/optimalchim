@@ -65,10 +65,10 @@
     }
 
     &--form {
-        background-color: $primary;
+        border: 2px solid $accent;
         color: $light;
-        padding: 15px 20px;
-        border-radius: $br-m;
+        background-color: $accent;
+        padding: 10px 15px;
     }
 
     &--go-to-top {
@@ -83,5 +83,30 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    &--dialog {
+        &-close {
+            position: absolute;
+            right: 15px;
+        }
+    }
+
+    &--feedback {
+        position: fixed;
+        background-color: $accent;
+        border-radius: 50%;
+        bottom: $br-s;
+        right: $br-s;
+        height: 56px;
+        width: 56px;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:disabled {
+        opacity: 0.4;
     }
 }

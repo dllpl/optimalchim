@@ -1,0 +1,53 @@
+@import "../variables";
+@import "../mixin";
+
+.dialog {
+    background-color: $light;
+    color: $secondary;
+    border: 0;
+    animation: move-in 0.3s;
+    animation-fill-mode: forwards;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: $into-section-gape - 10;
+        padding: 40px 50px;
+    }
+
+
+    &__title {
+        margin: 0;
+        color: $accent;
+    }
+
+    &::backdrop {
+        background-color: rgba(136, 136, 136, 0.3);
+        animation: fade-in 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fade-in {
+        from {
+            backdrop-filter: blur(0px);
+        }
+
+        to {
+            backdrop-filter: blur(8px);
+        }
+
+    }
+
+    @keyframes move-in {
+        from {
+            translate: 0 10px;
+            opacity: 0;
+        }
+
+        to {
+            translate: 0;
+            opacity: 1;
+        }
+
+    }
+}

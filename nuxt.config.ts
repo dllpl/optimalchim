@@ -51,7 +51,7 @@ export default defineNuxtConfig({
         'nuxt-swiper',
         "nuxt-build-cache",
         '@vee-validate/nuxt',
-        '@formkit/auto-animate/nuxt'
+        '@formkit/auto-animate/nuxt',
     ],
     googleFonts: {
         families: {

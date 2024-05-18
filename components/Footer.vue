@@ -54,9 +54,12 @@ const currentYear = new Date().getFullYear()
             <hr class="footer__sep">
             <div class="footer__container">
                 <div class="footer__cop">
-                    <div class="footer__cop-left">©️ {{currentYear}} ООО "ОПТИМАЛХИМ"</div>
+                    <div class="footer__cop-left">©️ {{currentYear}} Все права защищены.</div>
                     <div class="footer__cop-right">
-                        Сайт разработан студией <a href="https://webseed.ru" title="Заказать разработку сайта в Челнах и Казани" target="_blank" class="link--accent">webseed.ru</a>
+                        <a href="https://webseed.ru" title="Заказать разработку сайта в Челнах и Казани" target="_blank" class="dev">
+                            <svg-icon name="logo-webseed" class="icon icon--webseed"/>
+                            <span>Разработка и продвижение сайтов <br> webseed.ru</span>
+                        </a>
                     </div>
                 </div>
             </div>

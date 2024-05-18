@@ -79,3 +79,11 @@ p {
   flex-direction: column !important;
   height: auto !important;
 }
+
+.dev {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    line-height: normal;
+    align-items: center;
+}
