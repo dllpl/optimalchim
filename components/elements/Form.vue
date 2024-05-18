@@ -1,4 +1,7 @@
 <script setup>
+
+const emits = defineEmits(['submit'])
+
 const formSend = ref(null)
 const data = ref({
     name: null,
@@ -10,7 +13,7 @@ const sendForm = async () => {
         return false
     }
 
-    await useFetch('/api/auth/login', {
+    await useFetch('/api/sendForm', {
         method: 'POST',
         body: data.value,
         onResponse({request, response, options}) {
@@ -20,7 +23,12 @@ const sendForm = async () => {
     formSend.value = true
     setTimeout(() => {
         formSend.value = false
-    }, 5000)
+        data.value = {
+            name: null,
+            phone: null
+        }
+        emits('submit')
+    }, 3000)
 }
 
 const maskaOptions = {

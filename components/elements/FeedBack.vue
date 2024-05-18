@@ -1,13 +1,12 @@
 <script setup>
+const dialog = ref(null)
 const dialogOpen = () => {
     disableScroll()
-    const dialog = document.querySelector('dialog')
-    dialog.showModal()
+    dialog.value.showModal()
 }
 const dialogClose = () => {
     enableScroll()
-    const dialog = document.querySelector('dialog')
-    dialog.close()
+    dialog.value.close()
 }
 
 const disableScroll = () => {
@@ -25,20 +24,19 @@ const data = ref({
     phone: null
 })
 
-
 </script>
 <template>
     <button class="btn btn--feedback" @click="dialogOpen">
         <svg-icon name="chat" class="icon icon--chat"></svg-icon>
     </button>
-    <dialog class="dialog">
+    <dialog class="dialog" ref="dialog">
         <button class="btn btn--dialog-close" @click="dialogClose">
             <svg-icon name="close" class="icon icon--close"></svg-icon>
         </button>
         <div class="dialog__container">
             <h2 class="dialog__title">Заказать добавку</h2>
             <div class="dialog__content">
-                <ElementsForm/>
+                <ElementsForm @submit="dialogClose"/>
             </div>
         </div>
     </dialog>
