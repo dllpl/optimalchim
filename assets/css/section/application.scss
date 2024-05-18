@@ -4,6 +4,10 @@
 .application {
     margin-bottom: $section-margin;
 
+    @include tablet {
+        margin-bottom: $section-margin / 3;
+    }
+
     &__top {
         display: flex;
         flex-direction: column;

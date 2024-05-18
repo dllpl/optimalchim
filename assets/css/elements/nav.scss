@@ -2,34 +2,45 @@
 @import "../mixin";
 
 .nav {
-  padding-top: 15px;
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-  }
+    padding-top: 15px;
 
-  //&__column {
-  //  display: flex;
-  //  flex-direction: column;
-  //  gap: 15px;
-  //  flex-wrap: wrap;
-  //  height: 100px;
-  //}
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
 
-  &__item {}
+        &-mobile {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border-bottom: 1px solid $accent;
+            padding-bottom: 15px;
+        }
 
-  &__link {
-    font-size: 16px;
-    color: $dark;
-    transition: all .2s ease-in-out;
-
-    &:hover {
-      color: $accent;
     }
 
-    &--light {
-      color: $light;
+    //&__column {
+    //  display: flex;
+    //  flex-direction: column;
+    //  gap: 15px;
+    //  flex-wrap: wrap;
+    //  height: 100px;
+    //}
+
+    &__item {
     }
-  }
+
+    &__link {
+        font-size: 16px;
+        color: $dark;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &--light {
+            color: $light;
+        }
+    }
 }

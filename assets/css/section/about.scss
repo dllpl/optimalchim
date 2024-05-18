@@ -2,26 +2,30 @@
 @import "../mixin";
 
 .about {
-  margin-bottom: $section-margin;
+    margin-bottom: $section-margin;
 
-  &__container{
-    display: flex;
-    flex-direction: column;
-    gap: $into-section-gape;
-  }
-
-  &__content {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-
-    &-text {
-      display: flex;
-      flex-direction: column;
-      width: 49%;
-      gap: 25px;
+    @include tablet {
+        margin-bottom: $section-margin / 3;
     }
-  }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: $into-section-gape;
+    }
+
+    &__content {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            gap: 25px;
+        }
+    }
 
 }

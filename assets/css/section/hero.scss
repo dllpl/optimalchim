@@ -2,32 +2,37 @@
 @import "../mixin";
 
 .hero {
-  margin-top: $section-margin;
-  margin-bottom: $section-margin;
+    margin-top: $section-margin;
+    margin-bottom: $section-margin;
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: $into-section-gape;
-  }
+    @include tablet {
+        margin-top: $section-margin / 3;
+        margin-bottom: $section-margin / 3;
+    }
 
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-  }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: $into-section-gape;
+    }
 
-  &__subtitle {
-    font-size: 16px;
-  }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
 
-  &__title {
-    min-width: 65%;
-  }
+    &__subtitle {
+        font-size: 16px;
+    }
 
-  &__img {
-    width: 100%;
-    height: 100%;
-  }
+    &__title {
+        min-width: 65%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
 }

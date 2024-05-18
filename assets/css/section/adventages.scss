@@ -6,6 +6,10 @@
     background-color: #002F54;
     color: $light;
 
+    @include tablet {
+        margin-bottom: $section-margin / 3;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
