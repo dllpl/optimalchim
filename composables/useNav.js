@@ -4,7 +4,7 @@ export const useNav = () => {
         {title: 'О компании', link: '/#about'},
         {title: 'Продукция', link: '/#products'},
         {title: 'Преимущества', link: '/#advantages'},
-        {title: 'Преминение', link: '/#application'},
+        {title: 'Партнеры', link: '/#partners'},
         {title: 'Контакты', link: '/#contacts'},
     ]
 }

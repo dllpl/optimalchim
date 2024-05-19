@@ -59,6 +59,11 @@
         height: 40px;
     }
 
+    &--telegram {
+        width: 30px;
+        height: 30px;
+    }
+
     &--arrow {
         width: 25px;
         height: 25px;
@@ -154,5 +159,9 @@
 
     &--primary {
         background-color: $primary;
+    }
+
+    &--light {
+        background-color: $light;
     }
 }

@@ -4,7 +4,8 @@
         <SectionAbout/>
         <SectionProducts/>
         <SectionAdvantages/>
-        <SectionApplication/>
+<!--        <SectionPartners/>-->
+        <SectionContacts/>
     </main>
     <ElementsGoToTop/>
     <ElementsFeedBack/>

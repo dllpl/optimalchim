@@ -13,12 +13,20 @@
         flex-direction: column;
         gap: $into-section-gape - 10;
         padding: 40px 50px;
+
+        @include mobile {
+            padding: 5px 10px;
+        }
     }
 
 
     &__title {
         margin: 0;
         color: $accent;
+
+        @include mobile {
+            font-size: 22px;
+        }
     }
 
     &::backdrop {

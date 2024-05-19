@@ -1,0 +1,45 @@
+@import "../variables";
+@import "../mixin";
+
+.contacts {
+    margin-bottom: $section-margin;
+    @include tablet {
+        margin-bottom: calc($section-margin / 3);
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: $into-section-gape;
+
+        @include tablet {
+            gap: calc($into-section-gape / 3);
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: $into-section-gape;
+        @include small-tablet {
+            flex-direction: column;
+        }
+
+        &-left {
+            width: 50%;
+            background-color: $light-gray;
+            padding: 20px;
+
+            @include small-tablet {
+                width: 100%;
+            }
+        }
+
+        &-right{
+            width: 50%;
+            @include small-tablet {
+                width: 100%;
+            }
+        }
+    }
+}
