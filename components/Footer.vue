@@ -1,5 +1,6 @@
 <script setup>
 const currentYear = new Date().getFullYear()
+const nav = useNav()
 </script>
 <template>
     <footer class="footer">
@@ -19,34 +20,10 @@ const currentYear = new Date().getFullYear()
                 </div>
                 <div class="footer__right">
                     <ul class="footer__column">
-                        <li class="footer_item">
-                            <NuxtLink to="/" class="nav__link nav__link--light">Главная</NuxtLink>
-                        </li>
-                        <li class="footer_item">
-                            <NuxtLink href="#" class="nav__link nav__link--light">О компании</NuxtLink>
-                        </li>
-                        <li class="footer_item">
-                            <NuxtLink href="#" class="nav__link nav__link--light">Продукция</NuxtLink>
-                        </li>
-                        <li class="footer_item">
-                            <NuxtLink href="#" class="nav__link nav__link--light">Преимущества</NuxtLink>
-                        </li>
-                    </ul>
-                    <ul class="footer__column">
-                        <li class="footer_item">
-                            <NuxtLink href="#" class="nav__link nav__link--light">Поддержка</NuxtLink>
-                        </li>
-                        <li class="footer_item">
-                            <NuxtLink href="#" class="nav__link nav__link--light">География поставок</NuxtLink>
-                        </li>
-                        <li class="footer_item">
-                            <NuxtLink href="#" class="nav__link nav__link--light">Контакты</NuxtLink>
-                        </li>
-                        <li class="footer_item">
-                            <a href="tel:+79003292396" class="link link--flex" title="Позвонить">
-                                <svg-icon name="phone" class="icon icon--nav-phone"/>
-                                <span class="link--accent">Позвонить</span>
-                            </a>
+                        <li class="footer_item"
+                            v-for="(item, i) in nav" :key="i"
+                        >
+                            <NuxtLink :to="item.link" class="nav__link nav__link--light">{{ item.title }}</NuxtLink>
                         </li>
                     </ul>
                 </div>

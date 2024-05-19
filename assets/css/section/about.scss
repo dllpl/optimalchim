@@ -5,13 +5,18 @@
     margin-bottom: $section-margin;
 
     @include tablet {
-        margin-bottom: $section-margin / 3;
+        margin-bottom: calc($section-margin / 3);
     }
 
     &__container {
         display: flex;
         flex-direction: column;
         gap: $into-section-gape;
+
+        @include tablet {
+            gap: calc($into-section-gape / 3);
+        }
+
     }
 
     &__content {
@@ -20,11 +25,20 @@
         justify-content: space-between;
         align-items: center;
 
+        @include small-tablet {
+            flex-direction: column;
+        }
+
         &-text {
             display: flex;
             flex-direction: column;
             width: 49%;
             gap: 25px;
+
+            @include small-tablet {
+                width: 100%;
+            }
+
         }
     }
 

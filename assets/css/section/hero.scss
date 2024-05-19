@@ -6,8 +6,13 @@
     margin-bottom: $section-margin;
 
     @include tablet {
-        margin-top: $section-margin / 3;
-        margin-bottom: $section-margin / 3;
+        margin-top: calc($section-margin / 3);
+        margin-bottom: calc($section-margin / 3);
+    }
+
+    @include small-tablet {
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     &__content {
@@ -19,8 +24,12 @@
     &__top {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         gap: 20px;
+
+        @include tablet {
+            flex-direction: column;
+        }
+
     }
 
     &__subtitle {

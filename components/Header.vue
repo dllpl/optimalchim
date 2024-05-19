@@ -1,12 +1,5 @@
 <script setup>
-const menu = [
-    {title: 'Главная', link: '/'},
-    {title: 'О компании', link: '/#about'},
-    {title: 'Продукция', link: '/#products'},
-    {title: 'Преимущества', link: '/#advantages'},
-    {title: 'Преминение', link: '/#application'},
-    {title: 'Контакты', link: '/#contacts'},
-]
+const menu = useNav()
 
 const contacts = [
     {title: 'По вопросам и предложениям', link: 'mailto:info@optimalchim.ru', text: 'info@optimalchim.ru'},

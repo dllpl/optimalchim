@@ -16,6 +16,10 @@
         @include tablet {
             font-size: 32px;
         }
+
+        @include small-tablet {
+            font-size: 24px;
+        }
     }
 
     &--advantages {
@@ -30,11 +34,20 @@
         @include tablet {
             font-size: 32px;
         }
+
+        @include tablet {
+            font-size: 26px;
+        }
     }
 
     &--advantages--item {
         font-size: 26px;
         margin-top: 0;
+
+        @include small-tablet {
+            font-size: 20px;
+        }
+
     }
 
     &--light {

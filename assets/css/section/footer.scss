@@ -2,65 +2,79 @@
 @import "../mixin";
 
 .footer {
-  background-color: $dark;
-  color: $light;
-  padding: $br-l 0;
-
-
-  &__title {
+    background-color: $dark;
     color: $light;
-  }
+    padding: $br-l 0;
 
-  &__company {
-    color: $secondary;
-    font-size: 14px;
-  }
-
-
-  &__left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  &__container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-
-  &__right {
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-  }
-
-  &__column {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    text-align: end;
-  }
-
-  &__sep {
-    margin: $br-s 0;
-    background-color: $secondary;
-    height: 1px;
-    border: 0;
-  }
-
-  &__cop {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    &-left {
-      font-size: 14px;
-      color: $secondary;
+    @include mobile {
+        padding: $br-s 0;
     }
-    &-right {
-      font-size: 14px;
-      color: $secondary;
+
+    &__title {
+        color: $light;
     }
-  }
+
+    &__company {
+        color: $secondary;
+        font-size: 14px;
+    }
+
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        @include small-tablet {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    &__column {
+        display: flex;
+        gap: 20px;
+        text-align: end;
+        flex-wrap: wrap;
+
+        @include small-tablet {
+            text-align: start;
+        }
+    }
+
+    &__sep {
+        margin: $br-s 0;
+        background-color: $secondary;
+        height: 1px;
+        border: 0;
+    }
+
+    &__cop {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &-left {
+            font-size: 14px;
+            color: $secondary;
+        }
+
+        &-right {
+            font-size: 14px;
+            color: $secondary;
+        }
+    }
 
 }

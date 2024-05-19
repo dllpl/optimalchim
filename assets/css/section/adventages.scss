@@ -7,7 +7,7 @@
     color: $light;
 
     @include tablet {
-        margin-bottom: $section-margin / 3;
+        margin-bottom: calc($section-margin / 3);
     }
 
     &__container {
@@ -16,6 +16,11 @@
         gap: $into-section-gape;
         padding-top: $into-section-gape;
         padding-bottom: $into-section-gape;
+
+        @include small-tablet {
+            gap: calc($into-section-gape / 3);
+        }
+
     }
 
     &__top {
@@ -38,6 +43,10 @@
         padding-bottom: $into-section-gape;
         min-height: 225px;
 
+        @include mobile {
+            flex-direction: column;
+        }
+
         &:last-child {
             border-bottom: none;
         }
@@ -47,6 +56,11 @@
             flex-direction: column;
             justify-content: space-around;
             width: 50%;
+
+            @include mobile {
+                order: 1;
+                width: 100%;
+            }
         }
 
         &-icon {
@@ -56,11 +70,21 @@
             border-radius: $br-s;
             background: $light;
             width: 50%;
+
+            @include mobile {
+                order: 2;
+                padding: 20px;
+                width: 100%;
+            }
         }
 
         &-list {
             list-style-type: disc;
             margin-left: $br-s;
+
+            @include small-tablet {
+                font-size: 16px;
+            }
         }
     }
 }

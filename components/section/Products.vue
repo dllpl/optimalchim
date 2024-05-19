@@ -4,22 +4,22 @@ const SwiperConfig = {
         SwiperAutoplay,
         SwiperNavigation,
     ],
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 0,
     navigation: {
         prevEl: '.prev-product',
         nextEl: '.next-product',
     },
-    // breakpoints: {
-    //   // '1023': {
-    //   //     slidesPerView: 1,
-    //   //     spaceBetween: 0,
-    //   // },
+    breakpoints: {
+      '767': {
+          slidesPerView: 3,
+          spaceBetween: 30,
+      },
     //   '1440': {
     //     slidesPerView: 3,
     //     spaceBetween: 30,
     //   },
-    // }
+    }
 }
 </script>
 
