@@ -51,7 +51,8 @@ export default defineNuxtConfig({
         'nuxt-swiper',
         "nuxt-build-cache",
         '@vee-validate/nuxt',
-        '@formkit/auto-animate/nuxt'
+        '@formkit/auto-animate/nuxt',
+        'yandex-metrika-module-nuxt3',
     ],
     googleFonts: {
         families: {
@@ -67,6 +68,11 @@ export default defineNuxtConfig({
             FieldArray: 'VeeFieldArray',
             ErrorMessage: 'VeeErrorMessage',
         },
+    },
+    yandexMetrika: {
+        id: '97326649',
+        webvisor: true,
+        consoleLog: false,
     },
 
     device: {
