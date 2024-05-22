@@ -33,9 +33,8 @@ const nav = useNav()
                 <div class="footer__cop">
                     <div class="footer__cop-left">©️ {{currentYear}} Все права защищены.</div>
                     <div class="footer__cop-right">
-                        <a href="https://webseed.ru" title="Заказать разработку сайта в Челнах и Казани" target="_blank" class="dev">
-                            <svg-icon name="logo-webseed" class="icon icon--webseed"/>
-                            <span>Разработка и продвижение сайтов <br> webseed.ru</span>
+                        <a href="https://webseed.ru" title="Заказать разработку сайта в Челнах и Казани" target="_blank" class="dev link--accent">
+                            <span>Разработка и продвижение сайтов webseed.ru</span>
                         </a>
                     </div>
                 </div>

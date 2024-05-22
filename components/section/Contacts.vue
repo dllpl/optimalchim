@@ -14,21 +14,31 @@
                         <li><strong>ОКПО </strong>51733744</li>
                         <br>
                         <li><strong>Генеральный директор: </strong><br>Игнатьев Виталий Сергеевич</li>
+                        <li><strong>Адрес: </strong><br>Республика Татарстан, г. Казань</li>
                     </ul>
-                    <div class="link--flex" style="margin-top: 15px">
-                        <a href="tel:+79047668200" class="link" title="Позвонить" target="_blank">
-                            <div class="circle circle--light">
-                                <svg-icon name="phone" class="icon icon--hero-phone" />
-                            </div>
-                        </a>
-                        <a href="https://t.me/Vital2323" class="link" title="Написать в Telegram" target="_blank">
-                            <div class="circle circle--light">
-                                <svg-icon name="telegram" class="icon icon--telegram" />
-                            </div>
-                        </a>
+                    <div class="contacts__links" style="margin-top: 15px">
+                        <div>
+                            <a href="tel:+79047668200" class="link link--accent link--700" title="Позвонить"
+                               target="_blank">
+                                +79047668200
+                            </a>
+                        </div>
+                        <div class="link--flex">
+                            <a href="tel:+79047668200" class="link" title="Позвонить" target="_blank">
+                                <div class="circle circle--light">
+                                    <svg-icon name="phone" class="icon icon--hero-phone"/>
+                                </div>
+                            </a>
+                            <a href="https://t.me/Vital2323" class="link" title="Написать в Telegram" target="_blank">
+                                <div class="circle circle--light">
+                                    <svg-icon name="telegram" class="icon icon--telegram"/>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="contacts__content-right">
+                    <h2>Купить добавку</h2>
                     <ElementsForm/>
                 </div>
 

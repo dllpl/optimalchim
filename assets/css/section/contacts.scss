@@ -16,6 +16,16 @@
         }
     }
 
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include small-tablet {
+            font-size: 16px;
+        }
+    }
+
     &__content {
         display: flex;
         justify-content: space-between;
@@ -32,6 +42,7 @@
 
             @include small-tablet {
                 width: 100%;
+                font-size: 16px;
             }
         }
 
