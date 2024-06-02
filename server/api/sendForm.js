@@ -5,8 +5,8 @@ export default defineEventHandler(async (event) => {
     let text = ''
 
     text = '<b>Заявки с сайта</b>\n\n'
+    text += `<b>Имя</b>: ${body?.name}`
     text += `<b>Номер телефона</b>: ${body?.phone}\n`
-    text += `<b>Обращение по</b>: ${body?.name}`
 
     const sendData = {
         text,
