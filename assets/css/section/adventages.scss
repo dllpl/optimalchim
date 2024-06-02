@@ -3,7 +3,11 @@
 
 .advantages {
     margin-bottom: $section-margin;
-    background-color: #002F54;
+    background-image: url("/img/advent-bg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     color: $light;
 
     @include tablet {

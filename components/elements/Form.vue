@@ -16,9 +16,6 @@ const sendForm = async () => {
     await useFetch('/api/sendForm', {
         method: 'POST',
         body: data.value,
-        onResponse({request, response, options}) {
-
-        },
     })
     formSend.value = true
     setTimeout(() => {

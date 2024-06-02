@@ -13,7 +13,7 @@ useHead({
         <SectionAbout/>
         <SectionProducts/>
         <SectionAdvantages/>
-<!--        <SectionPartners/>-->
+        <SectionPartners/>
         <SectionContacts/>
     </main>
     <ElementsGoToTop/>

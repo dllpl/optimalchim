@@ -25,7 +25,7 @@ const SwiperConfig = {
             <div class="products__top">
                 <div>
                     <h2 class="products__title title title--section">Наша продукция</h2>
-                    <span>Оптималхим предлагает широкий спектр химических добавок для различных областей применения. Объем 1-3 литра.</span>
+                    <span>Оптималхим предлагает широкий спектр химических добавок для различных областей применения.</span>
                 </div>
                 <div class="products__nav">
                     <button class="btn products__btn prev-product">
@@ -46,7 +46,7 @@ const SwiperConfig = {
                                 <div class="products__item-title">МОНОКРИТ</div>
                                 <div>
                                     <h3 class="products__item-subtitle">
-                                        Платификаторы для летнего бетонирования.
+                                        Серия платификаторов для летнего бетонирования.
                                     </h3>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@ const SwiperConfig = {
                                 <div class="products__item-title">РЕОФРОСТ</div>
                                 <div>
                                     <h3 class="products__item-subtitle">
-                                        Добавки для зимнего бетонирования.
+                                        Серия добавок для зимнего бетонирования.
                                     </h3>
                                     <h3 class="products__item-subtitle">
                                         Комплексные суперпластификаторы для зимнего бетонирования.
@@ -75,7 +75,7 @@ const SwiperConfig = {
                                  class="products__item-img" loading="lazy">
                             <div class="products__item-text">
                                 <div class="products__item-title">АИР</div>
-                                <h3 class="products__item-subtitle">Добавки для строительных растворов</h3>
+                                <h3 class="products__item-subtitle">Серия добавок для строительных растворов</h3>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -85,7 +85,7 @@ const SwiperConfig = {
                                  class="products__item-img" loading="lazy">
                             <div class="products__item-text">
                                 <div class="products__item-title">РЕОСТАБ</div>
-                                <h3 class="products__item-subtitle">Добавки, регулирующие сроки схватывания</h3>
+                                <h3 class="products__item-subtitle">Серия добавок, регулирующая сроки схватывания</h3>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -96,7 +96,7 @@ const SwiperConfig = {
                                  class="products__item-img" loading="lazy">
                             <div class="products__item-text">
                                 <div class="products__item-title">ГИДРОФОБ</div>
-                                <h3 class="products__item-subtitle">Гидрофобизирующий состав для обработки каменных
+                                <h3 class="products__item-subtitle">Серия гидрофобизирующих составов для обработки каменных
                                     поверхностей</h3>
                             </div>
                         </div>

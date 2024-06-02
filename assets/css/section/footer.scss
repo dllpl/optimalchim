@@ -2,7 +2,11 @@
 @import "../mixin";
 
 .footer {
-    background-color: $dark;
+    background-image: url("/img/footer-bg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     color: $light;
     padding: $br-l 0;
 
@@ -15,7 +19,7 @@
     }
 
     &__company {
-        color: $secondary;
+        color: $light-gray;
         font-size: 14px;
     }
 

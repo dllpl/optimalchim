@@ -2,7 +2,7 @@
 @import "../mixin";
 
 .hero {
-    margin-top: $section-margin;
+    margin-top: calc($section-margin / 2);
     margin-bottom: $section-margin;
 
     @include tablet {
@@ -41,7 +41,11 @@
     }
 
     &__img {
-        width: 100%;
-        height: 100%;
+        height: 550px;
+        object-fit: cover;
+
+        @include mobile {
+            height: 300px;
+        }
     }
 }
