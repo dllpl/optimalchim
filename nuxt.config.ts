@@ -13,6 +13,13 @@ export default defineNuxtConfig({
         defaultLocal: 'ru'
     },
 
+    routeRules: {
+        '/': {
+            sitemap: { priority: 1.0, changefreq: 'weekly'},
+            headers: { 'Cache-Control': 'public, max-age=31536000, immutable' }
+        }
+    },
+
     app: {
         pageTransition: {name: 'page', mode: 'out-in'},
         head: {
