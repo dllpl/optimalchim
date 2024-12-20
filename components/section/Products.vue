@@ -55,7 +55,7 @@ const SwiperConfig = {
                     <SwiperSlide>
                         <div class="products__item">
                             <img src="/img/products/reofrost.png" alt="Добавка для зимнего бетонирования РЕОФРОСТ"
-                                 class="products__item-img">
+                                 class="products__item-img" loading="lazy">
                             <div class="products__item-text">
                                 <div class="products__item-title">РЕОФРОСТ</div>
                                 <div>
@@ -72,7 +72,7 @@ const SwiperConfig = {
                     <SwiperSlide>
                         <div class="products__item">
                             <img src="/img/products/air.png" alt="Добавка для строительных растворов АИР"
-                                 class="products__item-img">
+                                 class="products__item-img" loading="lazy">
                             <div class="products__item-text">
                                 <div class="products__item-title">АИР</div>
                                 <h3 class="products__item-subtitle">Серия добавок для строительных растворов</h3>
@@ -82,7 +82,7 @@ const SwiperConfig = {
                     <SwiperSlide>
                         <div class="products__item">
                             <img src="/img/products/reostab.png" alt="Добавка, регулирующие сроки схватывания РЕОСТАБ"
-                                 class="products__item-img">
+                                 class="products__item-img" loading="lazy">
                             <div class="products__item-text">
                                 <div class="products__item-title">РЕОСТАБ</div>
                                 <h3 class="products__item-subtitle">Серия добавок, регулирующих сроки схватывания</h3>
@@ -93,7 +93,7 @@ const SwiperConfig = {
                         <div class="products__item">
                             <img src="/img/products/gidrofob.png"
                                  alt="Гидрофобизирующий состав для обработки каменных поверхностей"
-                                 class="products__item-img">
+                                 class="products__item-img" loading="lazy">
                             <div class="products__item-text">
                                 <div class="products__item-title">ГИДРОФОБ</div>
                                 <h3 class="products__item-subtitle">Серия гидрофобизирующих составов для обработки каменных
