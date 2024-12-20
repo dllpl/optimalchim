@@ -15,6 +15,7 @@ export default defineNuxtConfig({
 
     routeRules: {
         '/': {
+            prerender: true,
             sitemap: { priority: 1.0, changefreq: 'weekly'},
             headers: { 'Cache-Control': 'public, max-age=31536000, immutable' }
         }

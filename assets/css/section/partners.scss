@@ -27,13 +27,13 @@
     }
 
     &__item {
-
+        max-width: 450px;
         padding: $br-s;
         display: flex;
         flex-direction: column;
         gap: $br-s;
         align-items: center;
-        justify-content: end;
+        justify-content: start;
 
         @include tablet {
             padding: calc($br-s / 3);
